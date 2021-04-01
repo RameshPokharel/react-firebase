@@ -8,11 +8,13 @@ import App from './components/App'
 import UseStateApp from './counter/WithUseState'
 import UseReducerApp from './counter/WithUseReducer'
 import RenderOptimize from './counter/RenderOptimize'
+import TODOApp from './todo/App'
+
 import Firebase, { FirebaseContext } from './components/Firebase'
 
 ReactDOM.render(
   <FirebaseContext.Provider value={new Firebase()}>
-    <RenderOptimize />
+    <TODOApp />
   </FirebaseContext.Provider>,
   document.getElementById('root')
 )
